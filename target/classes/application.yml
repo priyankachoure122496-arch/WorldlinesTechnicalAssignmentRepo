@@ -1,0 +1,27 @@
+spring:
+ datasource:
+  url: jdbc:h2:mem:testdb
+ jpa:
+  hibernate:
+   ddl-auto: update
+ h2:
+  console:
+   enabled: true
+
+cart:
+ pricing:
+  professional:
+   revenue-threshold: 10000000
+   above-threshold:
+    high: 1000
+    mid: 550
+    lap: 900
+   below-threshold:
+    high: 1150
+    mid: 600
+    lap: 1000
+
+  non-professional:
+   high: 1500
+   mid: 800
+   lap: 1200
